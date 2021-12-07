@@ -1,0 +1,25 @@
+a) Given that the Bellman Ford algorithm has a time complexity of O(V*E)
+	and Dijkstra's algorithm using a priority queue has a time complexity of
+	O(E*logV). In a dense graph where E = V*(V-1)/2, the time complexity of
+	Bellman Ford becomes O( (V^3 - V^2)/2 ) which can be simplified to
+	O(V^3), and the time complexity of Dijkstra's becomes 
+	O( (V^2 - V)/2 * logV ) which can be simplified to O(V^2 * logV).
+	Observing a graph of these two functions, we can see that for all positive
+	real numbers, (V^2 * logV) < (V^3). For sparse graphs, and using the
+	same processes, we can see that the time complexity of Bellman Ford
+	is O(V^2) and Dijkstra's is O(V*logV). The graphs for these functions
+	show that (V*logV) < (V^2) for all positive real numbers. So in other
+	words, there are no graphs in which Bellman Ford can be expected to
+	have a faster runtime than Dijkstra's algorithm.
+b) Graph density affects the performance of both algorithms. Denser graphs have
+	a much longer runtime in both Bellman Ford and Dijkstra's algorithms 
+	compared to more sparse graphs. In both cases, for dense and sparse
+	graphs, Dijkstra's algorithm was faster than Bellman Ford.
+c) The number of vertices in a graph did affect the performance. Specifically,
+	a higher number of vertices corresponds to a longer runtime for both
+	Bellman Ford and Dijkstra's, and also for both dense and sparse graphs.
+	However, Dijkstra's algorithm was still faster than the Bellman
+	Ford algorithm regardless of the number of vertices.
+d) Since my results show that Dijkstra's algorithm is faster than the Bellman Ford
+	algorithm in all cases that were tested, my results are consistent with 
+	the answer I gave to part (a).
